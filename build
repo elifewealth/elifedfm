@@ -1,0 +1,6 @@
+#!/bin/bash
+
+grunt prod
+sudo rm -r /usr/share/tomcat7/webapps/admin
+mv dist/community-app admin
+sudo mv admin /usr/share/tomcat7/webapps
